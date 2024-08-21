@@ -27,17 +27,40 @@ class InsetItemsGridViewController: UIViewController {
 extension InsetItemsGridViewController {
     /// - Tag: Inset
     func createLayout() -> UICollectionViewLayout {
-        let layout = UICollectionViewCompositionalLayout { (sectionIndex: Int, layoutEnvironment: NSCollectionLayoutEnvironment) -> NSCollectionLayoutSection? in
+        twoRowsLayout()
+    }
+
+    func twoRowsLayout() -> UICollectionViewLayout {
+        let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(0.2),
+                                             heightDimension: .fractionalHeight(1.0))
+        let item = NSCollectionLayoutItem(layoutSize: itemSize)
+        item.contentInsets = NSDirectionalEdgeInsets(top: 5, leading: 5, bottom: 5, trailing: 5)
+
+        let groupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0),
+                                              heightDimension: .fractionalWidth(0.2))
+        let group = NSCollectionLayoutGroup.horizontal(layoutSize: groupSize,
+                                                         subitems: [item])
+
+
+        let section = NSCollectionLayoutSection(group: group)
+
+
+        let layout = UICollectionViewCompositionalLayout(section: section)
+        return layout
+    }
+
+    func oneRowLayout() -> UICollectionViewLayout {
+        UICollectionViewCompositionalLayout { (sectionIndex: Int, layoutEnvironment: NSCollectionLayoutEnvironment) -> NSCollectionLayoutSection? in
 
             let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(0.2),
-                                                 heightDimension: .fractionalHeight(1.0))
+                                                  heightDimension: .fractionalHeight(1.0))
             let item = NSCollectionLayoutItem(layoutSize: itemSize)
             item.contentInsets = NSDirectionalEdgeInsets(top: 5, leading: 5, bottom: 5, trailing: 5)
 
             let groupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0),
-                                                  heightDimension: .fractionalWidth(0.2))
+                                                   heightDimension: .fractionalWidth(0.2))
             let group = NSCollectionLayoutGroup.horizontal(layoutSize: groupSize,
-                                                             subitems: [item])
+                                                           subitems: [item])
 
             let section = NSCollectionLayoutSection(group: group)
 
@@ -47,7 +70,6 @@ extension InsetItemsGridViewController {
             return section
         }
 
-        return layout
     }
 }
 
@@ -75,6 +97,9 @@ extension InsetItemsGridViewController {
             return collectionView.dequeueConfiguredReusableCell(using: cellRegistration, for: indexPath, item: identifier)
         }
 
+        // two sections
+
+
         // initial data
 //        var snapshot = NSDiffableDataSourceSnapshot<Int, Int>()
 //        var identifierOffset = 0
@@ -91,8 +116,8 @@ extension InsetItemsGridViewController {
         var snapshot = NSDiffableDataSourceSnapshot<Int, Int>()
         snapshot.appendSections([1])
         snapshot.appendItems(Array(0...50))
-        snapshot.appendSections([2])
-        snapshot.appendItems(Array(51...99))
+//        snapshot.appendSections([2])
+//        snapshot.appendItems(Array(51...99))
         dataSource.apply(snapshot, animatingDifferences: false)
     }
 }
