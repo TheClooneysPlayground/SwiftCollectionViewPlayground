@@ -1,0 +1,587 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AE4999B32C757161001EFEB9 /* tvOSCollectionViewCompositionalLayoutApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4999B22C757161001EFEB9 /* tvOSCollectionViewCompositionalLayoutApp.swift */; };
+		AE4999B52C757161001EFEB9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4999B42C757161001EFEB9 /* ContentView.swift */; };
+		AE4999B72C757162001EFEB9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE4999B62C757162001EFEB9 /* Assets.xcassets */; };
+		AE4999BA2C757162001EFEB9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE4999B92C757162001EFEB9 /* Preview Assets.xcassets */; };
+		AE4999C42C757162001EFEB9 /* tvOSCollectionViewCompositionalLayoutTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4999C32C757162001EFEB9 /* tvOSCollectionViewCompositionalLayoutTests.swift */; };
+		AE4999CE2C757162001EFEB9 /* tvOSCollectionViewCompositionalLayoutUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4999CD2C757162001EFEB9 /* tvOSCollectionViewCompositionalLayoutUITests.swift */; };
+		AE4999D02C757162001EFEB9 /* tvOSCollectionViewCompositionalLayoutUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4999CF2C757162001EFEB9 /* tvOSCollectionViewCompositionalLayoutUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AE4999C02C757162001EFEB9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AE4999A72C757161001EFEB9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AE4999AE2C757161001EFEB9;
+			remoteInfo = tvOSCollectionViewCompositionalLayout;
+		};
+		AE4999CA2C757162001EFEB9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AE4999A72C757161001EFEB9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AE4999AE2C757161001EFEB9;
+			remoteInfo = tvOSCollectionViewCompositionalLayout;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AE4999AF2C757161001EFEB9 /* tvOSCollectionViewCompositionalLayout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tvOSCollectionViewCompositionalLayout.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE4999B22C757161001EFEB9 /* tvOSCollectionViewCompositionalLayoutApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tvOSCollectionViewCompositionalLayoutApp.swift; sourceTree = "<group>"; };
+		AE4999B42C757161001EFEB9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		AE4999B62C757162001EFEB9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AE4999B92C757162001EFEB9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		AE4999BF2C757162001EFEB9 /* tvOSCollectionViewCompositionalLayoutTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tvOSCollectionViewCompositionalLayoutTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE4999C32C757162001EFEB9 /* tvOSCollectionViewCompositionalLayoutTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tvOSCollectionViewCompositionalLayoutTests.swift; sourceTree = "<group>"; };
+		AE4999C92C757162001EFEB9 /* tvOSCollectionViewCompositionalLayoutUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tvOSCollectionViewCompositionalLayoutUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE4999CD2C757162001EFEB9 /* tvOSCollectionViewCompositionalLayoutUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tvOSCollectionViewCompositionalLayoutUITests.swift; sourceTree = "<group>"; };
+		AE4999CF2C757162001EFEB9 /* tvOSCollectionViewCompositionalLayoutUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tvOSCollectionViewCompositionalLayoutUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AE4999AC2C757161001EFEB9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE4999BC2C757162001EFEB9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE4999C62C757162001EFEB9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AE4999A62C757161001EFEB9 = {
+			isa = PBXGroup;
+			children = (
+				AE4999B12C757161001EFEB9 /* tvOSCollectionViewCompositionalLayout */,
+				AE4999C22C757162001EFEB9 /* tvOSCollectionViewCompositionalLayoutTests */,
+				AE4999CC2C757162001EFEB9 /* tvOSCollectionViewCompositionalLayoutUITests */,
+				AE4999B02C757161001EFEB9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AE4999B02C757161001EFEB9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AE4999AF2C757161001EFEB9 /* tvOSCollectionViewCompositionalLayout.app */,
+				AE4999BF2C757162001EFEB9 /* tvOSCollectionViewCompositionalLayoutTests.xctest */,
+				AE4999C92C757162001EFEB9 /* tvOSCollectionViewCompositionalLayoutUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AE4999B12C757161001EFEB9 /* tvOSCollectionViewCompositionalLayout */ = {
+			isa = PBXGroup;
+			children = (
+				AE4999B22C757161001EFEB9 /* tvOSCollectionViewCompositionalLayoutApp.swift */,
+				AE4999B42C757161001EFEB9 /* ContentView.swift */,
+				AE4999B62C757162001EFEB9 /* Assets.xcassets */,
+				AE4999B82C757162001EFEB9 /* Preview Content */,
+			);
+			path = tvOSCollectionViewCompositionalLayout;
+			sourceTree = "<group>";
+		};
+		AE4999B82C757162001EFEB9 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				AE4999B92C757162001EFEB9 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		AE4999C22C757162001EFEB9 /* tvOSCollectionViewCompositionalLayoutTests */ = {
+			isa = PBXGroup;
+			children = (
+				AE4999C32C757162001EFEB9 /* tvOSCollectionViewCompositionalLayoutTests.swift */,
+			);
+			path = tvOSCollectionViewCompositionalLayoutTests;
+			sourceTree = "<group>";
+		};
+		AE4999CC2C757162001EFEB9 /* tvOSCollectionViewCompositionalLayoutUITests */ = {
+			isa = PBXGroup;
+			children = (
+				AE4999CD2C757162001EFEB9 /* tvOSCollectionViewCompositionalLayoutUITests.swift */,
+				AE4999CF2C757162001EFEB9 /* tvOSCollectionViewCompositionalLayoutUITestsLaunchTests.swift */,
+			);
+			path = tvOSCollectionViewCompositionalLayoutUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AE4999AE2C757161001EFEB9 /* tvOSCollectionViewCompositionalLayout */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE4999D32C757162001EFEB9 /* Build configuration list for PBXNativeTarget "tvOSCollectionViewCompositionalLayout" */;
+			buildPhases = (
+				AE4999AB2C757161001EFEB9 /* Sources */,
+				AE4999AC2C757161001EFEB9 /* Frameworks */,
+				AE4999AD2C757161001EFEB9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = tvOSCollectionViewCompositionalLayout;
+			productName = tvOSCollectionViewCompositionalLayout;
+			productReference = AE4999AF2C757161001EFEB9 /* tvOSCollectionViewCompositionalLayout.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AE4999BE2C757162001EFEB9 /* tvOSCollectionViewCompositionalLayoutTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE4999D62C757162001EFEB9 /* Build configuration list for PBXNativeTarget "tvOSCollectionViewCompositionalLayoutTests" */;
+			buildPhases = (
+				AE4999BB2C757162001EFEB9 /* Sources */,
+				AE4999BC2C757162001EFEB9 /* Frameworks */,
+				AE4999BD2C757162001EFEB9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AE4999C12C757162001EFEB9 /* PBXTargetDependency */,
+			);
+			name = tvOSCollectionViewCompositionalLayoutTests;
+			productName = tvOSCollectionViewCompositionalLayoutTests;
+			productReference = AE4999BF2C757162001EFEB9 /* tvOSCollectionViewCompositionalLayoutTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		AE4999C82C757162001EFEB9 /* tvOSCollectionViewCompositionalLayoutUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE4999D92C757162001EFEB9 /* Build configuration list for PBXNativeTarget "tvOSCollectionViewCompositionalLayoutUITests" */;
+			buildPhases = (
+				AE4999C52C757162001EFEB9 /* Sources */,
+				AE4999C62C757162001EFEB9 /* Frameworks */,
+				AE4999C72C757162001EFEB9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AE4999CB2C757162001EFEB9 /* PBXTargetDependency */,
+			);
+			name = tvOSCollectionViewCompositionalLayoutUITests;
+			productName = tvOSCollectionViewCompositionalLayoutUITests;
+			productReference = AE4999C92C757162001EFEB9 /* tvOSCollectionViewCompositionalLayoutUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AE4999A72C757161001EFEB9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					AE4999AE2C757161001EFEB9 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					AE4999BE2C757162001EFEB9 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = AE4999AE2C757161001EFEB9;
+					};
+					AE4999C82C757162001EFEB9 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = AE4999AE2C757161001EFEB9;
+					};
+				};
+			};
+			buildConfigurationList = AE4999AA2C757161001EFEB9 /* Build configuration list for PBXProject "tvOSCollectionViewCompositionalLayout" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AE4999A62C757161001EFEB9;
+			productRefGroup = AE4999B02C757161001EFEB9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AE4999AE2C757161001EFEB9 /* tvOSCollectionViewCompositionalLayout */,
+				AE4999BE2C757162001EFEB9 /* tvOSCollectionViewCompositionalLayoutTests */,
+				AE4999C82C757162001EFEB9 /* tvOSCollectionViewCompositionalLayoutUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AE4999AD2C757161001EFEB9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE4999BA2C757162001EFEB9 /* Preview Assets.xcassets in Resources */,
+				AE4999B72C757162001EFEB9 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE4999BD2C757162001EFEB9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE4999C72C757162001EFEB9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AE4999AB2C757161001EFEB9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE4999B52C757161001EFEB9 /* ContentView.swift in Sources */,
+				AE4999B32C757161001EFEB9 /* tvOSCollectionViewCompositionalLayoutApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE4999BB2C757162001EFEB9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE4999C42C757162001EFEB9 /* tvOSCollectionViewCompositionalLayoutTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE4999C52C757162001EFEB9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE4999CE2C757162001EFEB9 /* tvOSCollectionViewCompositionalLayoutUITests.swift in Sources */,
+				AE4999D02C757162001EFEB9 /* tvOSCollectionViewCompositionalLayoutUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AE4999C12C757162001EFEB9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AE4999AE2C757161001EFEB9 /* tvOSCollectionViewCompositionalLayout */;
+			targetProxy = AE4999C02C757162001EFEB9 /* PBXContainerItemProxy */;
+		};
+		AE4999CB2C757162001EFEB9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AE4999AE2C757161001EFEB9 /* tvOSCollectionViewCompositionalLayout */;
+			targetProxy = AE4999CA2C757162001EFEB9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		AE4999D12C757162001EFEB9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = appletvos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TVOS_DEPLOYMENT_TARGET = 17.5;
+			};
+			name = Debug;
+		};
+		AE4999D22C757162001EFEB9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = appletvos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				TVOS_DEPLOYMENT_TARGET = 17.5;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AE4999D42C757162001EFEB9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"tvOSCollectionViewCompositionalLayout/Preview Content\"";
+				DEVELOPMENT_TEAM = 87YP4F64MU;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Automatic;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.clooney.playground.tvOSCollectionViewCompositionalLayout;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+			};
+			name = Debug;
+		};
+		AE4999D52C757162001EFEB9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"tvOSCollectionViewCompositionalLayout/Preview Content\"";
+				DEVELOPMENT_TEAM = 87YP4F64MU;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Automatic;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.clooney.playground.tvOSCollectionViewCompositionalLayout;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+			};
+			name = Release;
+		};
+		AE4999D72C757162001EFEB9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 87YP4F64MU;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.clooney.playground.tvOSCollectionViewCompositionalLayoutTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/tvOSCollectionViewCompositionalLayout.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/tvOSCollectionViewCompositionalLayout";
+				TVOS_DEPLOYMENT_TARGET = 17.5;
+			};
+			name = Debug;
+		};
+		AE4999D82C757162001EFEB9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 87YP4F64MU;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.clooney.playground.tvOSCollectionViewCompositionalLayoutTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/tvOSCollectionViewCompositionalLayout.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/tvOSCollectionViewCompositionalLayout";
+				TVOS_DEPLOYMENT_TARGET = 17.5;
+			};
+			name = Release;
+		};
+		AE4999DA2C757162001EFEB9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 87YP4F64MU;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.clooney.playground.tvOSCollectionViewCompositionalLayoutUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TEST_TARGET_NAME = tvOSCollectionViewCompositionalLayout;
+			};
+			name = Debug;
+		};
+		AE4999DB2C757162001EFEB9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 87YP4F64MU;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.clooney.playground.tvOSCollectionViewCompositionalLayoutUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TEST_TARGET_NAME = tvOSCollectionViewCompositionalLayout;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AE4999AA2C757161001EFEB9 /* Build configuration list for PBXProject "tvOSCollectionViewCompositionalLayout" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE4999D12C757162001EFEB9 /* Debug */,
+				AE4999D22C757162001EFEB9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AE4999D32C757162001EFEB9 /* Build configuration list for PBXNativeTarget "tvOSCollectionViewCompositionalLayout" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE4999D42C757162001EFEB9 /* Debug */,
+				AE4999D52C757162001EFEB9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AE4999D62C757162001EFEB9 /* Build configuration list for PBXNativeTarget "tvOSCollectionViewCompositionalLayoutTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE4999D72C757162001EFEB9 /* Debug */,
+				AE4999D82C757162001EFEB9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AE4999D92C757162001EFEB9 /* Build configuration list for PBXNativeTarget "tvOSCollectionViewCompositionalLayoutUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE4999DA2C757162001EFEB9 /* Debug */,
+				AE4999DB2C757162001EFEB9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AE4999A72C757161001EFEB9 /* Project object */;
+}
