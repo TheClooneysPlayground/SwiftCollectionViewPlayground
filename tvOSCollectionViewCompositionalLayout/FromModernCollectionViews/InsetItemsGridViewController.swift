@@ -13,7 +13,7 @@ class InsetItemsGridViewController: UIViewController {
         case main
     }
 
-    var dataSource: UICollectionViewDiffableDataSource<Section, Int>! = nil
+    var dataSource: UICollectionViewDiffableDataSource<Int, Int>! = nil
     var collectionView: UICollectionView! = nil
 
     override func viewDidLoad() {
@@ -27,18 +27,26 @@ class InsetItemsGridViewController: UIViewController {
 extension InsetItemsGridViewController {
     /// - Tag: Inset
     func createLayout() -> UICollectionViewLayout {
-        let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(0.2),
-                                             heightDimension: .fractionalHeight(1.0))
-        let item = NSCollectionLayoutItem(layoutSize: itemSize)
-        item.contentInsets = NSDirectionalEdgeInsets(top: 5, leading: 5, bottom: 5, trailing: 5)
+        let layout = UICollectionViewCompositionalLayout { (sectionIndex: Int, layoutEnvironment: NSCollectionLayoutEnvironment) -> NSCollectionLayoutSection? in
 
-        let groupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0),
-                                              heightDimension: .fractionalWidth(0.2))
-        let group = NSCollectionLayoutGroup.horizontal(layoutSize: groupSize,
-                                                         subitems: [item])
+            let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(0.2),
+                                                 heightDimension: .fractionalHeight(1.0))
+            let item = NSCollectionLayoutItem(layoutSize: itemSize)
+            item.contentInsets = NSDirectionalEdgeInsets(top: 5, leading: 5, bottom: 5, trailing: 5)
 
-        let section = NSCollectionLayoutSection(group: group)
-        let layout = UICollectionViewCompositionalLayout(section: section)
+            let groupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0),
+                                                  heightDimension: .fractionalWidth(0.2))
+            let group = NSCollectionLayoutGroup.horizontal(layoutSize: groupSize,
+                                                             subitems: [item])
+
+            let section = NSCollectionLayoutSection(group: group)
+
+            // scroll horizontally
+            section.orthogonalScrollingBehavior = .groupPaging
+
+            return section
+        }
+
         return layout
     }
 }
@@ -61,16 +69,30 @@ extension InsetItemsGridViewController {
             cell.label.titleLabel!.font = UIFont.preferredFont(forTextStyle: .title1)
         }
 
-        dataSource = UICollectionViewDiffableDataSource<Section, Int>(collectionView: collectionView) {
+        dataSource = UICollectionViewDiffableDataSource<Int, Int>(collectionView: collectionView) {
             (collectionView: UICollectionView, indexPath: IndexPath, identifier: Int) -> UICollectionViewCell? in
             // Return the cell.
             return collectionView.dequeueConfiguredReusableCell(using: cellRegistration, for: indexPath, item: identifier)
         }
 
         // initial data
-        var snapshot = NSDiffableDataSourceSnapshot<Section, Int>()
-        snapshot.appendSections([.main])
-        snapshot.appendItems(Array(0...99))
+//        var snapshot = NSDiffableDataSourceSnapshot<Int, Int>()
+//        var identifierOffset = 0
+//        let itemsPerSection = 30
+//        for section in 0..<2 {
+//            snapshot.appendSections([section])
+//            let maxIdentifier = identifierOffset + itemsPerSection
+//            snapshot.appendItems(Array(identifierOffset..<maxIdentifier))
+//            identifierOffset += itemsPerSection
+//        }
+//        dataSource.apply(snapshot, animatingDifferences: false)
+
+
+        var snapshot = NSDiffableDataSourceSnapshot<Int, Int>()
+        snapshot.appendSections([1])
+        snapshot.appendItems(Array(0...50))
+        snapshot.appendSections([2])
+        snapshot.appendItems(Array(51...99))
         dataSource.apply(snapshot, animatingDifferences: false)
     }
 }

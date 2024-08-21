@@ -11,11 +11,30 @@ import SwiftUI
 struct App: SwiftUI.App {
     var body: some Scene {
         WindowGroup {
-//            HelloWorldView()
-            ViewControllerRepresentable { context in
-//                GridViewController()
-                InsetItemsGridViewController()
-            }
+            insetGrid
         }
+    }
+    var doubleVerticallyStackedInsetGrid: some View {
+        VStack {
+            insetGrid
+            insetGrid
+        }
+    }
+
+    /// Horizontal
+    var insetGrid: some View {
+        ViewControllerRepresentable { context in
+            InsetItemsGridViewController()
+        }
+    }
+
+    var grid: some View {
+        ViewControllerRepresentable { context in
+            GridViewController()
+        }
+    }
+
+    var helloWorld: some View {
+        HelloWorldView()
     }
 }
