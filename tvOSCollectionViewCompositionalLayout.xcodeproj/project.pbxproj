@@ -7,13 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AE4999B32C757161001EFEB9 /* tvOSCollectionViewCompositionalLayoutApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4999B22C757161001EFEB9 /* tvOSCollectionViewCompositionalLayoutApp.swift */; };
-		AE4999B52C757161001EFEB9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4999B42C757161001EFEB9 /* ContentView.swift */; };
+		AE4999B32C757161001EFEB9 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4999B22C757161001EFEB9 /* App.swift */; };
+		AE4999B52C757161001EFEB9 /* HelloWorldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4999B42C757161001EFEB9 /* HelloWorldView.swift */; };
 		AE4999B72C757162001EFEB9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE4999B62C757162001EFEB9 /* Assets.xcassets */; };
 		AE4999BA2C757162001EFEB9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE4999B92C757162001EFEB9 /* Preview Assets.xcassets */; };
-		AE4999C42C757162001EFEB9 /* tvOSCollectionViewCompositionalLayoutTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4999C32C757162001EFEB9 /* tvOSCollectionViewCompositionalLayoutTests.swift */; };
-		AE4999CE2C757162001EFEB9 /* tvOSCollectionViewCompositionalLayoutUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4999CD2C757162001EFEB9 /* tvOSCollectionViewCompositionalLayoutUITests.swift */; };
-		AE4999D02C757162001EFEB9 /* tvOSCollectionViewCompositionalLayoutUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4999CF2C757162001EFEB9 /* tvOSCollectionViewCompositionalLayoutUITestsLaunchTests.swift */; };
+		AE4999DD2C757270001EFEB9 /* GridCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4999DC2C757270001EFEB9 /* GridCollectionViewController.swift */; };
+		AE4999DF2C7572AC001EFEB9 /* ViewControllerRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4999DE2C7572AC001EFEB9 /* ViewControllerRepresentable.swift */; };
+		AE4999E32C7573FC001EFEB9 /* TextCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4999E22C7573FC001EFEB9 /* TextCell.swift */; };
+		AE4999E52C757420001EFEB9 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4999E42C757420001EFEB9 /* Extensions.swift */; };
+		AE4999E72C75B074001EFEB9 /* InsetItemsGridViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4999E62C75B074001EFEB9 /* InsetItemsGridViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,15 +37,17 @@
 
 /* Begin PBXFileReference section */
 		AE4999AF2C757161001EFEB9 /* tvOSCollectionViewCompositionalLayout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tvOSCollectionViewCompositionalLayout.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		AE4999B22C757161001EFEB9 /* tvOSCollectionViewCompositionalLayoutApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tvOSCollectionViewCompositionalLayoutApp.swift; sourceTree = "<group>"; };
-		AE4999B42C757161001EFEB9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		AE4999B22C757161001EFEB9 /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
+		AE4999B42C757161001EFEB9 /* HelloWorldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloWorldView.swift; sourceTree = "<group>"; };
 		AE4999B62C757162001EFEB9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AE4999B92C757162001EFEB9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		AE4999BF2C757162001EFEB9 /* tvOSCollectionViewCompositionalLayoutTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tvOSCollectionViewCompositionalLayoutTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		AE4999C32C757162001EFEB9 /* tvOSCollectionViewCompositionalLayoutTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tvOSCollectionViewCompositionalLayoutTests.swift; sourceTree = "<group>"; };
 		AE4999C92C757162001EFEB9 /* tvOSCollectionViewCompositionalLayoutUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tvOSCollectionViewCompositionalLayoutUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		AE4999CD2C757162001EFEB9 /* tvOSCollectionViewCompositionalLayoutUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tvOSCollectionViewCompositionalLayoutUITests.swift; sourceTree = "<group>"; };
-		AE4999CF2C757162001EFEB9 /* tvOSCollectionViewCompositionalLayoutUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tvOSCollectionViewCompositionalLayoutUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		AE4999DC2C757270001EFEB9 /* GridCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridCollectionViewController.swift; sourceTree = "<group>"; };
+		AE4999DE2C7572AC001EFEB9 /* ViewControllerRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerRepresentable.swift; sourceTree = "<group>"; };
+		AE4999E22C7573FC001EFEB9 /* TextCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextCell.swift; sourceTree = "<group>"; };
+		AE4999E42C757420001EFEB9 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		AE4999E62C75B074001EFEB9 /* InsetItemsGridViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsetItemsGridViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,8 +79,6 @@
 			isa = PBXGroup;
 			children = (
 				AE4999B12C757161001EFEB9 /* tvOSCollectionViewCompositionalLayout */,
-				AE4999C22C757162001EFEB9 /* tvOSCollectionViewCompositionalLayoutTests */,
-				AE4999CC2C757162001EFEB9 /* tvOSCollectionViewCompositionalLayoutUITests */,
 				AE4999B02C757161001EFEB9 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -94,10 +96,12 @@
 		AE4999B12C757161001EFEB9 /* tvOSCollectionViewCompositionalLayout */ = {
 			isa = PBXGroup;
 			children = (
-				AE4999B22C757161001EFEB9 /* tvOSCollectionViewCompositionalLayoutApp.swift */,
-				AE4999B42C757161001EFEB9 /* ContentView.swift */,
+				AE4999B22C757161001EFEB9 /* App.swift */,
+				AE4999E12C7573E7001EFEB9 /* FromModernCollectionViews */,
+				AE4999B42C757161001EFEB9 /* HelloWorldView.swift */,
 				AE4999B62C757162001EFEB9 /* Assets.xcassets */,
 				AE4999B82C757162001EFEB9 /* Preview Content */,
+				AE4999DE2C7572AC001EFEB9 /* ViewControllerRepresentable.swift */,
 			);
 			path = tvOSCollectionViewCompositionalLayout;
 			sourceTree = "<group>";
@@ -110,21 +114,15 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		AE4999C22C757162001EFEB9 /* tvOSCollectionViewCompositionalLayoutTests */ = {
+		AE4999E12C7573E7001EFEB9 /* FromModernCollectionViews */ = {
 			isa = PBXGroup;
 			children = (
-				AE4999C32C757162001EFEB9 /* tvOSCollectionViewCompositionalLayoutTests.swift */,
+				AE4999DC2C757270001EFEB9 /* GridCollectionViewController.swift */,
+				AE4999E42C757420001EFEB9 /* Extensions.swift */,
+				AE4999E22C7573FC001EFEB9 /* TextCell.swift */,
+				AE4999E62C75B074001EFEB9 /* InsetItemsGridViewController.swift */,
 			);
-			path = tvOSCollectionViewCompositionalLayoutTests;
-			sourceTree = "<group>";
-		};
-		AE4999CC2C757162001EFEB9 /* tvOSCollectionViewCompositionalLayoutUITests */ = {
-			isa = PBXGroup;
-			children = (
-				AE4999CD2C757162001EFEB9 /* tvOSCollectionViewCompositionalLayoutUITests.swift */,
-				AE4999CF2C757162001EFEB9 /* tvOSCollectionViewCompositionalLayoutUITestsLaunchTests.swift */,
-			);
-			path = tvOSCollectionViewCompositionalLayoutUITests;
+			path = FromModernCollectionViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +255,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AE4999B52C757161001EFEB9 /* ContentView.swift in Sources */,
-				AE4999B32C757161001EFEB9 /* tvOSCollectionViewCompositionalLayoutApp.swift in Sources */,
+				AE4999E32C7573FC001EFEB9 /* TextCell.swift in Sources */,
+				AE4999E52C757420001EFEB9 /* Extensions.swift in Sources */,
+				AE4999DD2C757270001EFEB9 /* GridCollectionViewController.swift in Sources */,
+				AE4999DF2C7572AC001EFEB9 /* ViewControllerRepresentable.swift in Sources */,
+				AE4999B52C757161001EFEB9 /* HelloWorldView.swift in Sources */,
+				AE4999B32C757161001EFEB9 /* App.swift in Sources */,
+				AE4999E72C75B074001EFEB9 /* InsetItemsGridViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,7 +269,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AE4999C42C757162001EFEB9 /* tvOSCollectionViewCompositionalLayoutTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,8 +276,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AE4999CE2C757162001EFEB9 /* tvOSCollectionViewCompositionalLayoutUITests.swift in Sources */,
-				AE4999D02C757162001EFEB9 /* tvOSCollectionViewCompositionalLayoutUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

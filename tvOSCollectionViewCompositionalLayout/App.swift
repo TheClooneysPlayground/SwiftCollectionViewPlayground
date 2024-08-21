@@ -8,10 +8,14 @@
 import SwiftUI
 
 @main
-struct tvOSCollectionViewCompositionalLayoutApp: App {
+struct App: SwiftUI.App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+//            HelloWorldView()
+            ViewControllerRepresentable { context in
+//                GridViewController()
+                InsetItemsGridViewController()
+            }
         }
     }
 }
