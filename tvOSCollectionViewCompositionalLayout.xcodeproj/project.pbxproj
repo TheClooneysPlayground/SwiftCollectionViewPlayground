@@ -16,6 +16,8 @@
 		AE4999E32C7573FC001EFEB9 /* TextCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4999E22C7573FC001EFEB9 /* TextCell.swift */; };
 		AE4999E52C757420001EFEB9 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4999E42C757420001EFEB9 /* Extensions.swift */; };
 		AE4999E72C75B074001EFEB9 /* InsetItemsGridViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4999E62C75B074001EFEB9 /* InsetItemsGridViewController.swift */; };
+		AE4C204B2C8E6E8700C8F679 /* GridImageCompositionalCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4C204A2C8E6E8700C8F679 /* GridImageCompositionalCollectionViewController.swift */; };
+		AE4C204E2C8E70B500C8F679 /* ImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4C204D2C8E70B500C8F679 /* ImageCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,8 @@
 		AE4999E22C7573FC001EFEB9 /* TextCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextCell.swift; sourceTree = "<group>"; };
 		AE4999E42C757420001EFEB9 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		AE4999E62C75B074001EFEB9 /* InsetItemsGridViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsetItemsGridViewController.swift; sourceTree = "<group>"; };
+		AE4C204A2C8E6E8700C8F679 /* GridImageCompositionalCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridImageCompositionalCollectionViewController.swift; sourceTree = "<group>"; };
+		AE4C204D2C8E70B500C8F679 /* ImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +106,7 @@
 				AE4999B62C757162001EFEB9 /* Assets.xcassets */,
 				AE4999B82C757162001EFEB9 /* Preview Content */,
 				AE4999DE2C7572AC001EFEB9 /* ViewControllerRepresentable.swift */,
+				AE4C204C2C8E709900C8F679 /* Image Grid Compositional Collection View */,
 			);
 			path = tvOSCollectionViewCompositionalLayout;
 			sourceTree = "<group>";
@@ -123,6 +128,15 @@
 				AE4999E62C75B074001EFEB9 /* InsetItemsGridViewController.swift */,
 			);
 			path = FromModernCollectionViews;
+			sourceTree = "<group>";
+		};
+		AE4C204C2C8E709900C8F679 /* Image Grid Compositional Collection View */ = {
+			isa = PBXGroup;
+			children = (
+				AE4C204A2C8E6E8700C8F679 /* GridImageCompositionalCollectionViewController.swift */,
+				AE4C204D2C8E70B500C8F679 /* ImageCell.swift */,
+			);
+			path = "Image Grid Compositional Collection View";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +271,10 @@
 			files = (
 				AE4999E32C7573FC001EFEB9 /* TextCell.swift in Sources */,
 				AE4999E52C757420001EFEB9 /* Extensions.swift in Sources */,
+				AE4C204E2C8E70B500C8F679 /* ImageCell.swift in Sources */,
 				AE4999DD2C757270001EFEB9 /* GridCollectionViewController.swift in Sources */,
 				AE4999DF2C7572AC001EFEB9 /* ViewControllerRepresentable.swift in Sources */,
+				AE4C204B2C8E6E8700C8F679 /* GridImageCompositionalCollectionViewController.swift in Sources */,
 				AE4999B52C757161001EFEB9 /* HelloWorldView.swift in Sources */,
 				AE4999B32C757161001EFEB9 /* App.swift in Sources */,
 				AE4999E72C75B074001EFEB9 /* InsetItemsGridViewController.swift in Sources */,
@@ -354,7 +370,7 @@
 				SDKROOT = appletvos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TVOS_DEPLOYMENT_TARGET = 17.5;
+				TVOS_DEPLOYMENT_TARGET = 17.0;
 			};
 			name = Debug;
 		};
@@ -409,7 +425,7 @@
 				MTL_FAST_MATH = YES;
 				SDKROOT = appletvos;
 				SWIFT_COMPILATION_MODE = wholemodule;
-				TVOS_DEPLOYMENT_TARGET = 17.5;
+				TVOS_DEPLOYMENT_TARGET = 17.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;

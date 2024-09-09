@@ -24,20 +24,81 @@ class InsetItemsGridViewController: UIViewController {
     }
 }
 
+/// Data & Loading
 extension InsetItemsGridViewController {
-    /// - Tag: Inset
-    func createLayout() -> UICollectionViewLayout {
-        twoRowsLayout()
+    func loadData(into dateSource: UICollectionViewDiffableDataSource<Int, Int>) {
+        dataSource.apply(
+//            oneSectionSnapshot(),
+             twoSectionsSnapshot(),
+            animatingDifferences: false
+        )
     }
 
+    func twoSectionsSnapshot() -> NSDiffableDataSourceSnapshot<Int, Int> {
+        var snapshot = NSDiffableDataSourceSnapshot<Int, Int>()
+
+        snapshot.appendSections([1])
+        snapshot.appendItems(Array(0...4))
+        snapshot.appendSections([2])
+        snapshot.appendItems(Array(5...9))
+
+        return snapshot
+    }
+
+    func oneSectionSnapshot() -> NSDiffableDataSourceSnapshot<Int, Int> {
+        var snapshot = NSDiffableDataSourceSnapshot<Int, Int>()
+
+        snapshot.appendSections([1])
+        snapshot.appendItems(Array(0...99))
+
+        return snapshot
+    }
+}
+
+/// Layout
+extension InsetItemsGridViewController {
+
+    /// - Tag: Inset
+    func createLayout() -> UICollectionViewLayout {
+        oneRowLayout()
+    }
+
+    /// doesn't work
+    func twoRowsLayoutV2() -> UICollectionViewLayout {
+        let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(0.2),
+                                              heightDimension: .fractionalHeight(1.0))
+        let item = NSCollectionLayoutItem(layoutSize: itemSize)
+        let inset: CGFloat = 35
+        item.contentInsets = NSDirectionalEdgeInsets(top: inset, leading: inset, bottom: inset, trailing: inset)
+
+        let groupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0),
+                                               heightDimension: .fractionalHeight(0.5))
+        let group = NSCollectionLayoutGroup.vertical(layoutSize: groupSize,
+                                                     repeatingSubitem: item,
+                                                     count: 2)
+
+        group.interItemSpacing = .fixed(10)
+
+        let section = NSCollectionLayoutSection(group: group)
+        section.contentInsets = NSDirectionalEdgeInsets(top: 10, leading: 10, bottom: 10, trailing: 10)
+        // scroll horizontally
+        section.orthogonalScrollingBehavior = .groupPaging
+
+        let layout = UICollectionViewCompositionalLayout(section: section)
+        return layout
+    }
+
+    /// doesn't work
     func twoRowsLayout() -> UICollectionViewLayout {
         let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(0.2),
                                              heightDimension: .fractionalHeight(1.0))
         let item = NSCollectionLayoutItem(layoutSize: itemSize)
-        item.contentInsets = NSDirectionalEdgeInsets(top: 5, leading: 5, bottom: 5, trailing: 5)
+        
+        let inset: CGFloat = 35
+        item.contentInsets = NSDirectionalEdgeInsets(top: inset, leading: inset, bottom: inset, trailing: inset)
 
         let groupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0),
-                                              heightDimension: .fractionalWidth(0.2))
+                                              heightDimension: .fractionalHeight(0.2))
         let group = NSCollectionLayoutGroup.horizontal(layoutSize: groupSize,
                                                          subitems: [item])
 
@@ -97,27 +158,6 @@ extension InsetItemsGridViewController {
             return collectionView.dequeueConfiguredReusableCell(using: cellRegistration, for: indexPath, item: identifier)
         }
 
-        // two sections
-
-
-        // initial data
-//        var snapshot = NSDiffableDataSourceSnapshot<Int, Int>()
-//        var identifierOffset = 0
-//        let itemsPerSection = 30
-//        for section in 0..<2 {
-//            snapshot.appendSections([section])
-//            let maxIdentifier = identifierOffset + itemsPerSection
-//            snapshot.appendItems(Array(identifierOffset..<maxIdentifier))
-//            identifierOffset += itemsPerSection
-//        }
-//        dataSource.apply(snapshot, animatingDifferences: false)
-
-
-        var snapshot = NSDiffableDataSourceSnapshot<Int, Int>()
-        snapshot.appendSections([1])
-        snapshot.appendItems(Array(0...50))
-//        snapshot.appendSections([2])
-//        snapshot.appendItems(Array(51...99))
-        dataSource.apply(snapshot, animatingDifferences: false)
+        loadData(into: dataSource)
     }
 }

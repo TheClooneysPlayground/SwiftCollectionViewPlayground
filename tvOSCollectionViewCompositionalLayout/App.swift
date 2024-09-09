@@ -11,9 +11,26 @@ import SwiftUI
 struct App: SwiftUI.App {
     var body: some Scene {
         WindowGroup {
-            insetGrid
+            imageGrid
         }
     }
+
+    var imageGrid: some View {
+        ViewControllerRepresentable { context in
+            GridImageCompositionalCollectionViewController()
+        }
+    }
+
+    var combined: some View {
+        VStack {
+            HelloWorldView()
+            insetGrid
+            // doubleVerticallyStackedInsetGrid
+
+        }
+    }
+
+    /// If you want to see this working with two rows of data, change the `loadData(into:)` method to only load data for one section.
     var doubleVerticallyStackedInsetGrid: some View {
         VStack {
             insetGrid

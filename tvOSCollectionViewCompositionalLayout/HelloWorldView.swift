@@ -14,6 +14,9 @@ struct HelloWorldView: View {
                 .imageScale(.large)
                 .foregroundStyle(.tint)
             Text("Hello, world!")
+            Button("Tap ME!") {
+                print(">>> tapped")
+            }
         }
         .padding()
     }
