@@ -28,7 +28,8 @@ class GridImageCompositionalCollectionViewController:
         let layout = UICollectionViewCompositionalLayout { sectionIndex, environment in
             return self.createLayout()
         }
-        collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
+//        collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
+        collectionView = UICollectionView(frame: .zero, collectionViewLayout: horizontallyScrollingLayout())
 
         collectionView.delegate = self
         collectionView.dataSource = self
@@ -46,6 +47,24 @@ class GridImageCompositionalCollectionViewController:
             collectionView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             collectionView.trailingAnchor.constraint(equalTo: view.trailingAnchor)
         ])
+    }
+
+    private func horizontallyScrollingLayout() -> UICollectionViewCompositionalLayout {
+        UICollectionViewCompositionalLayout { sectionIndex, layoutEnvironment -> NSCollectionLayoutSection? in
+            // Define the item size
+            let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(0.33), heightDimension: .fractionalHeight(1))
+            let item = NSCollectionLayoutItem(layoutSize: itemSize)
+            item.contentInsets = NSDirectionalEdgeInsets(top: 30, leading: 30, bottom: 30, trailing: 30)
+
+            // Define the group size
+            let groupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0), heightDimension: .fractionalHeight(1))
+            let group = NSCollectionLayoutGroup.horizontal(layoutSize: groupSize, subitems: [item])
+
+            // Define the section
+            let section = NSCollectionLayoutSection(group: group)
+            section.orthogonalScrollingBehavior = .continuous
+            return section
+        }
     }
 
     private func createLayout() -> NSCollectionLayoutSection {
