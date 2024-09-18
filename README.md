@@ -2,6 +2,15 @@
 
 Demonstrating different capabilities of the `UICollectionView`.
 
+## Collaborating Collection Views: TVCollectionViewFullScreenLayout Mixed with Inset Grid
+
+### Focus working perfectly across the two
+
+As long as you turn on `remembersLastFocusedIndexPath`
+
+https://github.com/user-attachments/assets/3ec168ab-5eed-4d7a-9401-4c58e2902fb9
+
+
 ## Focusable Composition Image Grid Collection View on tvOS
 
 See it yourself. :D
