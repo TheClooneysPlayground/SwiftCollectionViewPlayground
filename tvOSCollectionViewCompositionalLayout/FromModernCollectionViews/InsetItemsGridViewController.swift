@@ -139,6 +139,9 @@ extension InsetItemsGridViewController {
         collectionView = UICollectionView(frame: view.bounds, collectionViewLayout: createLayout())
         collectionView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         collectionView.backgroundColor = .black
+
+        collectionView.remembersLastFocusedIndexPath = true
+
         view.addSubview(collectionView)
     }
     func configureDataSource() {
