@@ -46,6 +46,7 @@ extension GridViewController {
                                                          subitems: [item])
 
         let section = NSCollectionLayoutSection(group: group)
+        
 
         let layout = UICollectionViewCompositionalLayout(section: section)
         return layout

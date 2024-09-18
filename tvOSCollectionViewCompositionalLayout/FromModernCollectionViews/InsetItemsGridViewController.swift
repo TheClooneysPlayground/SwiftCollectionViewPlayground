@@ -28,8 +28,8 @@ class InsetItemsGridViewController: UIViewController {
 extension InsetItemsGridViewController {
     func loadData(into dateSource: UICollectionViewDiffableDataSource<Int, Int>) {
         dataSource.apply(
-//            oneSectionSnapshot(),
-             twoSectionsSnapshot(),
+            oneSectionSnapshot(),
+//             twoSectionsSnapshot(),
             animatingDifferences: false
         )
     }
@@ -38,9 +38,9 @@ extension InsetItemsGridViewController {
         var snapshot = NSDiffableDataSourceSnapshot<Int, Int>()
 
         snapshot.appendSections([1])
-        snapshot.appendItems(Array(0...4))
+        snapshot.appendItems(Array(0...14))
         snapshot.appendSections([2])
-        snapshot.appendItems(Array(5...9))
+        snapshot.appendItems(Array(15...19))
 
         return snapshot
     }

@@ -26,10 +26,10 @@ class GridImageCompositionalCollectionViewController:
 
         // Set up the UICollectionView
         let layout = UICollectionViewCompositionalLayout { sectionIndex, environment in
-            return self.createLayout()
+            self.createLayout()
         }
-//        collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
-        collectionView = UICollectionView(frame: .zero, collectionViewLayout: horizontallyScrollingLayout())
+        collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
+//        collectionView = UICollectionView(frame: .zero, collectionViewLayout: horizontallyScrollingLayout())
 
         collectionView.delegate = self
         collectionView.dataSource = self
@@ -76,6 +76,9 @@ class GridImageCompositionalCollectionViewController:
         let group = NSCollectionLayoutGroup.horizontal(layoutSize: groupSize, subitems: [item])
 
         let section = NSCollectionLayoutSection(group: group)
+        // scroll horizontally
+        section.orthogonalScrollingBehavior = .continuous
+
         return section
     }
 

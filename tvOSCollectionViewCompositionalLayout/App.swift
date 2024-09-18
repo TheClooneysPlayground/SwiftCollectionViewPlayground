@@ -11,7 +11,29 @@ import SwiftUI
 struct App: SwiftUI.App {
     var body: some Scene {
         WindowGroup {
-            imageGrid
+            combiningFullscreenWithInsetGrid
+//            fullScreen
+//            combined
+//            imageGrid
+        }
+    }
+
+    var combiningFullscreenWithInsetGrid: some View {
+        GeometryReader { geometry in
+            ScrollView {
+                VStack {
+                    fullScreen
+                        .frame(height: geometry.size.height * 0.8)
+                    insetGrid
+                        .frame(height: geometry.size.height * 0.5)
+                }
+            }
+        }
+    }
+
+    var fullScreen: some View {
+        ViewControllerRepresentable { context in
+            FullscreenCollectionViewController()
         }
     }
 
