@@ -7,14 +7,46 @@
 
 import SwiftUI
 
+import UIKit
+import TVUIKit
+
 @main
 struct App: SwiftUI.App {
     var body: some Scene {
         WindowGroup {
+//            nativeButtonsCollectionView
+//            tvUIKitButtonsCollectionView
+//            buttonsStorybook
+//            buttons
             combiningFullscreenWithInsetGrid
 //            fullScreen
 //            combined
 //            imageGrid
+//            insetGrid
+        }
+    }
+    
+    var nativeButtonsCollectionView: some View {
+        ViewControllerRepresentable { _ in
+            NativeButtonsCollectionView()
+        }
+    }
+
+    var tvUIKitButtonsCollectionView: some View {
+        ViewControllerRepresentable { _ in
+            TVUIKitButtonsCollectionView()
+        }
+    }
+
+    var buttonsStorybook: some View {
+        ViewControllerRepresentable { _ in
+            UIKitButtonStorybook()
+        }
+    }
+
+    var buttons: some View {
+        ViewControllerRepresentable { _ in
+            ButtonCollectionViewViewController()
         }
     }
 

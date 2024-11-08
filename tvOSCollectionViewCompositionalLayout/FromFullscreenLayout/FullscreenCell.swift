@@ -1,10 +1,12 @@
 import TVUIKit
 
 class FullscreenCell: TVCollectionViewFullScreenCell {
+//    class FullscreenCell: UICollectionViewCell {
 
     fileprivate let imageView: UIImageView = UIImageView(frame: .zero)
     fileprivate let titleLabel: UILabel = UILabel(frame: .zero)
     fileprivate let button: UIButton = UIButton(type: .plain)
+    fileprivate let buttonTwo: UIButton = UIButton(type: .plain)
 
     // This is the action that executes when someone presses the button.
     fileprivate var buttonAction: (() -> Void)?
@@ -24,6 +26,8 @@ class FullscreenCell: TVCollectionViewFullScreenCell {
 
     // MARK: UI
     fileprivate func pinViews() {
+        let contentView = maskedContentView
+
         // You can add an image, or other UIView, to the `maskedBackgroundView` to achive
         // the parallax effect when moving between cells.
         maskedBackgroundView.addSubview(imageView)
@@ -37,17 +41,21 @@ class FullscreenCell: TVCollectionViewFullScreenCell {
         button.setTitle("Expand", for: .normal)
         button.addTarget(self, action: #selector(buttonPressed(_:)), for: .primaryActionTriggered)
 
+        buttonTwo.setTitle("Expand Two", for: .normal)
+        buttonTwo.addTarget(self, action: #selector(buttonPressed(_:)), for: .primaryActionTriggered)
+
+
         // When you add views to `maskedContentView`, they "hover" above the background.
-        let stackView = UIStackView(arrangedSubviews: [titleLabel, button])
+        let stackView = UIStackView(arrangedSubviews: [titleLabel, button, buttonTwo])
         stackView.spacing = 20
         stackView.axis = .vertical
         stackView.translatesAutoresizingMaskIntoConstraints = false
-        maskedContentView.addSubview(stackView)
+        contentView.addSubview(stackView)
 
         NSLayoutConstraint.activate([stackView.heightAnchor.constraint(equalToConstant: 250),
-                                     stackView.leadingAnchor.constraint(equalTo: maskedContentView.leadingAnchor, constant: 150),
-                                     stackView.trailingAnchor.constraint(equalTo: maskedContentView.trailingAnchor, constant: -150),
-                                     stackView.bottomAnchor.constraint(equalTo: maskedContentView.bottomAnchor, constant: -20)])
+                                     stackView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 150),
+                                     stackView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -150),
+                                     stackView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -20)])
     }
 
     // MARK: Misc.
