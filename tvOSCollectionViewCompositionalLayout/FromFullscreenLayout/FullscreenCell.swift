@@ -30,7 +30,7 @@ class FullscreenCell: TVCollectionViewFullScreenCell {
 
         // You can add an image, or other UIView, to the `maskedBackgroundView` to achive
         // the parallax effect when moving between cells.
-        maskedBackgroundView.addSubview(imageView)
+        contentView.addSubview(imageView)
         imageView.frame = CGRect(x: 0, y: 0, width: frame.width, height: frame.height)
         imageView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         imageView.contentMode = .scaleAspectFill

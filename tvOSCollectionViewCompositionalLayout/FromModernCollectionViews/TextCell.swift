@@ -8,7 +8,41 @@ Generic text cell
 import UIKit
 
 class TextCell: UICollectionViewCell {
-    let label = UIButton()
+
+//    enum FocusedState {
+//        case cell
+//        case label
+//
+//        var other: FocusedState {
+//            switch self {
+//            case .cell: return .label
+//            case .label: return .cell
+//            }
+//        }
+//    }
+//
+//    var focusedState: FocusedState = .label {
+//        didSet {
+//            setNeedsFocusUpdate()
+//        }
+//    }
+//
+//    override var preferredFocusEnvironments: [any UIFocusEnvironment] {
+//        switch focusedState {
+//        case .cell: return [self]
+//        case .label: return [label]
+//        }
+//    }
+//
+//    override func shouldUpdateFocus(in context: UIFocusUpdateContext) -> Bool {
+//        focusedState = focusedState.other
+//
+//        return super.shouldUpdateFocus(in: context)
+//    }
+
+    override var canBecomeFocused: Bool { false }
+
+    let label = UIButton(type: .plain)
     static let reuseIdentifier = "text-cell-reuse-identifier"
 
     override init(frame: CGRect) {

@@ -18,11 +18,11 @@ struct App: SwiftUI.App {
 //            tvUIKitButtonsCollectionView
 //            buttonsStorybook
 //            buttons
-            combiningFullscreenWithInsetGrid
+//            combiningFullscreenWithInsetGrid
 //            fullScreen
 //            combined
 //            imageGrid
-//            insetGrid
+            insetGrid
         }
     }
     
